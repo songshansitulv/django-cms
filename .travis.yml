@@ -163,3 +163,5 @@ notifications:
   irc:
     - irc.freenode.org#django-cms
     - irc.freenode.org#django-cms-sprint
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
